@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.base {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.modalContainer {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: none;
+  background-color: #0000005e;
+}
+
+.wrapper {
+  height: 72vh;
+  width: 72vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  /* border-radius: 30px; */
+}
+.card {
+  height: 22vh;
+  width: 22vh;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 30px;
+}
+.container h1 {
+  text-align: center;
+}
+.modal {
+  height: 40vh;
+  width: 50vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal .modal-content {
+  font-size: 1em;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+.modal h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 30px;
+}
+.modal span {
+  display: inline-block;
+  text-align: right;
+  font-size: 3em;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 20px;
+}
+.btn {
+  height: 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+button:disabled {
+  color: black;
+}
+.players {
+  height: 50vh;
+  width: 30vw;
+  position: absolute;
+  left: 35vw;
+  z-index: 1;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  background-image: url("src/img.jpg");
+  color: white;
+}
+.players input[type="text"] {
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 1rem;
+}
+.players label {
+  margin: 20px 0 10px 0;
+}
+
+.players h1 {
+  text-align: center;
+}
+.players button {
+  width: 10vw;
+  align-self: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  height: 30px;
+  border: 2px solid white;
+  color: white;
+  background: none;
+  font-size: large;
+}
+.players button:hover {
+  box-shadow: 2px 3px 5px white;
+}
